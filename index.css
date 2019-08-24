@@ -1,0 +1,65 @@
+html,*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    color:white;
+}
+.slide {
+  
+    height:100vh;
+    background:linear-gradient(to left,#ba7453,#d1a984);
+    width:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -3;
+}
+
+nav {
+     display:grid;
+    grid-template-columns: 10% 1fr 1fr 10%;
+    align-items: center;
+    height:10vh;
+    padding:2rem;
+
+
+}
+nav img{
+    grid-column: 3/4;
+    justify-self: flex-end;
+  
+}
+nav h1 {
+    grid-column: 2/3;
+    font-size:2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.main-image {
+    display:flex;
+    height:80vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+ 
+}
+.main-image img {
+    width:80%;
+    height:80%;
+   
+    position: relative;
+    filter: brightness(70%);
+     object-fit: cover;
+  
+
+}
+.ocean {
+    position: absolute;
+    top:70%;
+    left:15%;
+    font-size:2rem;
+    letter-spacing: 4px;
+
+}
